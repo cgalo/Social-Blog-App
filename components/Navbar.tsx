@@ -1,15 +1,13 @@
-import Link from 'next/link';
+import Link from "next/link";
 
-interface NavbarProps {
-   
-}
+interface NavbarProps {}
 
-const Navbar = ():JSX.Element => {
-   const user:any = null;
-   const username:any = true;
+const Navbar = (): JSX.Element => {
+  const user: any = null;
+  const username: any = false;
 
-   return (
-      <nav className="navbar">
+  return (
+    <nav className="navbar">
       <ul>
         <li>
           <Link href="/">
@@ -43,7 +41,7 @@ const Navbar = ():JSX.Element => {
         )}
       </ul>
     </nav>
-   );
+  );
 };
 
 export default Navbar;
